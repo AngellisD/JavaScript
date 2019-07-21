@@ -28,7 +28,7 @@ submit.on("click", function() {
     var inputElement = d3.select("#datetime");
     var inputValue = inputElement.property("value");
 
-    var filteredData = table.Data.filter(sighting => sighting.datetime === inputValue);
+    var filteredData = tableData.filter(sighting => sighting.datetime === inputValue);
 
     var elmtTable = document.getElementById('table-body');
     var tableRows = elmtTable.getElementsByTagName('tr');
